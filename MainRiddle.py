@@ -2,19 +2,20 @@
 File: src/MainRiddle.py
 Implements the main function of the Riddle Problem.
 Author: Joshua Simard
-Created: 8/28/25
+Created: 8/27/25
 Developer: Joshua Simard
 Date: 8/28/25
 
 This module contains the main logic for presenting and solving riddles.
-It is designed for use in COMP730 Lab 1 and serves as the entry point
-for riddle-related functionality.
 """
 
 from Riddle import Riddle
 
 def main():
-
+    """
+    Main function to run the riddle game.
+    """
+    
     print("Enter 'hint' to see the answer.")
 
     riddle_obj = Riddle("Riddles.txt")
