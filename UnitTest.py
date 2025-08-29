@@ -43,6 +43,12 @@ class TestRiddle(unittest.TestCase):
         """
         self.assertTrue(self.riddle_obj.check_answer(self.riddle_obj.answer))
 
+    def test_case_sensitivity(self):
+        """
+        Test that check_answer returns True for correct answers even if the case is different.
+        """
+        self.assertTrue(self.riddle_obj.check_answer(self.riddle_obj.answer.upper()))
+
     def test_check_answer_incorrect(self):
         """
         Test that check_answer returns False for incorrect answers.

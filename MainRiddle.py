@@ -15,7 +15,7 @@ def main():
     """
     Main function to run the riddle game.
     """
-    
+
     print("Enter 'hint' to see the answer.")
 
     riddle_obj = Riddle("Riddles.txt")
@@ -23,6 +23,10 @@ def main():
 
     while True:
         print(riddle_obj)
+
+        # Technically, using a 'while true' inside of a 'while true' is not good form. 
+        # But it will work for a simple implementation.
+        # In the future, it should more accurately having a toggle flag to determine if the user wants to continue.
         
         while True:
             user_answer = input("Your answer: ").strip().lower()
